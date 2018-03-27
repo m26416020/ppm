@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel=stylesheet href=jmobile/jquery.mobile-1.4.5.css />
+	<script src=jmobile/jquery.js></script>
+	<script src=jmobile/jquery.mobile-1.4.5.js></script>
+</head>
+<body>
+
+
+
+
+	<div data-role=page id=win1>
+		<div data-role=header>
+			<input type="combobox">
+  				<li><a href="#win1">CALCULATOR</a></li>
+  				<li><a href="#win2">COLOR</a></li>
+  				<li><a href="#win3">SUMMARY</a></li>
+			</input>
+			<h3>CALCULATOR</h3>
+			<div class="active" id="home">
+				<b>Insert number: </b><input type = "text" id="fkk">
+				<input type="button" value="Button" onclick="fak()">
+				<br><br>
+				<div id = "result"></div>
+					<script type = "text/javascript">
+						function fak() {
+						var x = document.getElementById("fkk").value;
+						def faktorial(n):
+    						if n == 1:
+      					   return 1
+   						 else:
+    					    return n * faktorial(n - 1)
+						var prt = x;
+						document.getElementById("result").innerHTML = prt;
+					}
+					</script>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div data-role=page id=win2>
+		<div data-role=header>
+			<h3>COLOR</h3>
+			<input type="combobox">
+  				<li><a href="#win1">CALCULATOR</a></li>
+  				<li><a href="#win2">COLOR</a></li>
+  				<li><a href="#win3">SUMMARY</a></li>
+			<input type="text" id= "namecolor">
+			<button onclick="colorr()">convert</button>
+			<p><font id="color">Mi Estilo de vida son el Destino</font></p>
+			<script>
+				function colorr(){
+					var c = document.getElementById("namecolor").value;
+					document.getElementById("color").color = c;	
+				}
+			</script>
+		</div>
+	</div>
+
+	<div data-role=page id=win3>
+		<div data-role=header>
+			<h3>SUMMARY</h3>
+			<p>Sejauh ini, saya sudah mempelajari sejarah mobile development di mana pada mulanya mobile tidak praktis dan memiliki fitur terbatas namun secara terus menerus berkembang seiring berjalannya waktu. Saya juga telah mempelajari cara memakai GitHub yang merupakan sebuah sistem yang mencatat perubahan-perubahan yang terjadi terhadap file-file yang disimpan pada GitHub. Juga saya sudah mempelajari mmembuat aplikasi mobile sederhana dengan memakai JQuery Mobile.</p>
+
+		</div>
+	</div>
+
+</body>
+
+
+
+</html>
